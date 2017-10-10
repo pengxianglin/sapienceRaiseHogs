@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_identity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="UAT环境"
+        android:textSize="25sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/logo_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_img"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_name"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3dp"
+            android:maxLength="50"
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:inputType="textPassword"
+                android:lineSpacingExtra="3dp"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:paddingRight="40dp"
+                android:textSize="14sp" />
+
+            <ToggleButton
+                android:id="@+id/open_pwd"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:checked="false"
+                android:gravity="center"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_send_code"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:lineSpacingExtra="3dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="获取验证码"
+                android:textSize="@dimen/defaultTextSize" />
+
+            <EditText
+                android:id="@+id/login_checknumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/btn_send_code"
+                android:lineSpacingExtra="3dp"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/defaultTextSize" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tips_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/defaultTextSize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/forget_password_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:onClick="forgetPassword"
+            android:paddingRight="10dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:enabled="false"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_padding_v"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
