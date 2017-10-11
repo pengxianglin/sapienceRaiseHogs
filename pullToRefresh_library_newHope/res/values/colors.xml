@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 列表 -->
+    <color name="list_title">#252525</color>
+    <color name="list_content">#666666</color>
+    <color name="devide_line">#cccccc</color>
+
+</resources>
