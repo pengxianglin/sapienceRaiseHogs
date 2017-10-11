@@ -1,10 +1,8 @@
 package com.rarvinw.app.basic.androidboot;
 
 import android.app.Application;
-import android.widget.Toast;
 
 import com.facebook.stetho.Stetho;
-import com.umeng.analytics.MobclickAgent;
 
 /**
  * Created by newhope on 2016/4/3.
@@ -20,11 +18,6 @@ public abstract class BasicApplication extends Application {
         super.onCreate();
         instance = this;
         Stetho.initializeWithDefaults(this);
-        //设置友盟AppKey,场景模式设置为普通统计，推广渠道default，Crash模式开启
-        MobclickAgent.UMAnalyticsConfig config = new
-                MobclickAgent.UMAnalyticsConfig(getApplicationContext(), "570c54c6e0f55a944700029c",
-                "default", MobclickAgent.EScenarioType.E_UM_NORMAL, true);
-        MobclickAgent.startWithConfigure(config);
         initBasic();
     }
 

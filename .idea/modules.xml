@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Smartpig.iml" filepath="$PROJECT_DIR$/Smartpig.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" filepath="$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sapienceRaiseHogs.iml" filepath="$PROJECT_DIR$/sapienceRaiseHogs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pullToRefresh_library_newHope/pullToRefresh_library_newHope.iml" filepath="$PROJECT_DIR$/pullToRefresh_library_newHope/pullToRefresh_library_newHope.iml" />
     </modules>
   </component>
 </project>

@@ -1,14 +1,16 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 25
     buildToolsVersion "26.0.1"
     defaultConfig {
         applicationId "com.example.pengxl.sapienceraisehogs"
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion 16
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -27,6 +29,7 @@ dependencies {
     compile project(path: ':base')
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.0'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
